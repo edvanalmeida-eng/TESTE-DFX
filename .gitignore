@@ -1,3 +1,8 @@
 
 # dados pessoais (repo publico)
 .claude/linkedin/voice.local.md
+
+# pasta linkedin: dados pessoais, so o README e versionado
+linkedin/*
+!linkedin/README.md
+.claude/linkedin/*.local.md
