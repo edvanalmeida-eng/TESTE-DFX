@@ -12,6 +12,7 @@ todo o resto é pessoal e fica ignorado.
 | `comentarios/` | comentários para fazer em posts de outros |
 | `mensagens/recrutadores`, `mensagens/conexoes` | DMs e convites |
 | `vagas/` | candidaturas e acompanhamento |
+| `fotos/` | suas fotos: perfil, banner, obras, portfólio (veja `fotos/LEIA-ME.md`) |
 | `portfolio/` | resumo de obras sem CPF, valores nem nomes de terceiros |
 | `analytics/` | números de posts e visitas, para o `li-audit` |
 | `plano/` | plano semanal do `li-plan` |
