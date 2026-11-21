@@ -18,6 +18,11 @@ eyeball this.
 python3 humanize.py draft.txt --report        # clean it, show what changed
 python3 detect.py draft.txt                    # score it, five checks
 python3 detect.py before.txt after.txt         # prove the delta
+
+# Draft in Portuguese (PT-BR)? Always pass the Portuguese lexicon, otherwise
+# the English one matches nothing and the score looks falsely clean:
+python3 humanize.py draft.txt --lexicon slop.pt-br.json --report
+python3 detect.py draft.txt --lexicon slop.pt-br.json
 ```
 
 Both read `slop.json`, which is the lexicon: 100+ stock words and phrases with
@@ -96,3 +101,11 @@ behalf, and do not tell a user their text is undetectable.
    go again. Two rounds is normal. Five means the draft was written by
    formula, and the fix is a different draft, not more passes.
 5. Show the user the cleaned text and the score. Never the score alone.
+
+## Portuguese (PT-BR) drafts
+
+If the voice file or the user writes in Portuguese, use `--lexicon slop.pt-br.json`
+on both scripts. The lexicon, the structural tells and the emoji/hashtag rules
+are Portuguese. The "contractions" and "personal pronouns" checks in
+`detect.py` are English-only and will under-score a good Portuguese draft, so
+judge VOICE by reading, not by that number.

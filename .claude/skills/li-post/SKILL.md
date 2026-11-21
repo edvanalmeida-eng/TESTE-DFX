@@ -21,6 +21,10 @@ posted it.
    If it does not exist, ask for **three of their own past posts**, infer the
    voice from those, and write the file. Do not skip this and do not invent a
    voice. A post in the wrong voice is worse than no post.
+   If the voice file says the user writes in Portuguese (PT-BR), write the post
+   in natural Brazilian Portuguese. Adapt the hook templates to how a Brazilian
+   professional would actually say it; do not translate them word for word. Run
+   `li-human` with `--lexicon slop.pt-br.json`.
 2. Read `hooks.json` in this folder. All 21 formulas, with templates, filled
    examples, what each is for, and how each one usually gets ruined.
 3. If the idea is thin - "post about AI" - do not pad it. Ask one batched

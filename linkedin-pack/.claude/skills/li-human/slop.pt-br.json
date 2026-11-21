@@ -1,0 +1,668 @@
+{
+  "version": "1.0-pt-br",
+  "note": "Léxico em português do Brasil para humanize.py e detect.py. Use com --lexicon slop.pt-br.json quando o rascunho estiver em PT-BR. Mesmo formato do slop.json. Edite à vontade.",
+  "invisible": [
+    {
+      "cp": "U+200B",
+      "name": "ZERO WIDTH SPACE",
+      "action": "delete"
+    },
+    {
+      "cp": "U+200C",
+      "name": "ZERO WIDTH NON-JOINER",
+      "action": "delete"
+    },
+    {
+      "cp": "U+200D",
+      "name": "ZERO WIDTH JOINER",
+      "action": "delete"
+    },
+    {
+      "cp": "U+2060",
+      "name": "WORD JOINER",
+      "action": "delete"
+    },
+    {
+      "cp": "U+FEFF",
+      "name": "ZERO WIDTH NO-BREAK SPACE / BOM",
+      "action": "delete"
+    },
+    {
+      "cp": "U+00AD",
+      "name": "SOFT HYPHEN",
+      "action": "delete"
+    },
+    {
+      "cp": "U+180E",
+      "name": "MONGOLIAN VOWEL SEPARATOR",
+      "action": "delete"
+    },
+    {
+      "cp": "U+061C",
+      "name": "ARABIC LETTER MARK",
+      "action": "delete"
+    },
+    {
+      "cp": "U+200E",
+      "name": "LEFT-TO-RIGHT MARK",
+      "action": "delete"
+    },
+    {
+      "cp": "U+200F",
+      "name": "RIGHT-TO-LEFT MARK",
+      "action": "delete"
+    },
+    {
+      "cp": "U+E0000-U+E007F",
+      "name": "TAG CHARACTERS (invisible ASCII smuggling)",
+      "action": "delete"
+    },
+    {
+      "cp": "U+00A0",
+      "name": "NO-BREAK SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+202F",
+      "name": "NARROW NO-BREAK SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+2009",
+      "name": "THIN SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+2007",
+      "name": "FIGURE SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+2003",
+      "name": "EM SPACE",
+      "action": "space"
+    },
+    {
+      "cp": "U+2002",
+      "name": "EN SPACE",
+      "action": "space"
+    }
+  ],
+  "typographic": [
+    {
+      "from": "—",
+      "name": "EM DASH",
+      "to": ", "
+    },
+    {
+      "from": "–",
+      "name": "EN DASH",
+      "to": "-"
+    },
+    {
+      "from": "‘",
+      "name": "LEFT SINGLE QUOTE",
+      "to": "'"
+    },
+    {
+      "from": "’",
+      "name": "RIGHT SINGLE QUOTE",
+      "to": "'"
+    },
+    {
+      "from": "“",
+      "name": "LEFT DOUBLE QUOTE",
+      "to": "\""
+    },
+    {
+      "from": "”",
+      "name": "RIGHT DOUBLE QUOTE",
+      "to": "\""
+    },
+    {
+      "from": "…",
+      "name": "HORIZONTAL ELLIPSIS",
+      "to": "..."
+    },
+    {
+      "from": "′",
+      "name": "PRIME",
+      "to": "'"
+    },
+    {
+      "from": "·",
+      "name": "MIDDLE DOT",
+      "to": "-"
+    },
+    {
+      "from": "•",
+      "name": "BULLET",
+      "to": "-"
+    },
+    {
+      "from": "→",
+      "name": "RIGHTWARDS ARROW",
+      "to": "->"
+    }
+  ],
+  "words": [
+    {
+      "find": "mergulhar fundo em",
+      "replace": "olhar",
+      "family": "verbs"
+    },
+    {
+      "find": "mergulhar em",
+      "replace": "olhar",
+      "family": "verbs"
+    },
+    {
+      "find": "mergulhe em",
+      "replace": "olhe",
+      "family": "verbs"
+    },
+    {
+      "find": "mergulho profundo",
+      "replace": "análise",
+      "family": "nouns"
+    },
+    {
+      "find": "alavancar",
+      "replace": "usar",
+      "family": "verbs"
+    },
+    {
+      "find": "alavancando",
+      "replace": "usando",
+      "family": "verbs"
+    },
+    {
+      "find": "alavanque",
+      "replace": "use",
+      "family": "verbs"
+    },
+    {
+      "find": "alavancagem",
+      "replace": "uso",
+      "family": "nouns"
+    },
+    {
+      "find": "potencializar",
+      "replace": "melhorar",
+      "family": "verbs"
+    },
+    {
+      "find": "potencializando",
+      "replace": "melhorando",
+      "family": "verbs"
+    },
+    {
+      "find": "potencialize",
+      "replace": "melhore",
+      "family": "verbs"
+    },
+    {
+      "find": "impulsionar",
+      "replace": "ajudar",
+      "family": "verbs"
+    },
+    {
+      "find": "impulsionando",
+      "replace": "ajudando",
+      "family": "verbs"
+    },
+    {
+      "find": "impulsione",
+      "replace": "ajude",
+      "family": "verbs"
+    },
+    {
+      "find": "desbloquear",
+      "replace": "abrir",
+      "family": "verbs"
+    },
+    {
+      "find": "desbloqueie",
+      "replace": "abra",
+      "family": "verbs"
+    },
+    {
+      "find": "desbloqueando",
+      "replace": "abrindo",
+      "family": "verbs"
+    },
+    {
+      "find": "navegar pelo",
+      "replace": "lidar com o",
+      "family": "verbs"
+    },
+    {
+      "find": "navegar por",
+      "replace": "lidar com",
+      "family": "verbs"
+    },
+    {
+      "find": "sinergia",
+      "replace": "parceria",
+      "family": "nouns"
+    },
+    {
+      "find": "sinergias",
+      "replace": "parcerias",
+      "family": "nouns"
+    },
+    {
+      "find": "disruptivo",
+      "replace": "novo",
+      "family": "adjectives"
+    },
+    {
+      "find": "disruptiva",
+      "replace": "nova",
+      "family": "adjectives"
+    },
+    {
+      "find": "disrupção",
+      "replace": "mudança",
+      "family": "nouns"
+    },
+    {
+      "find": "robusto",
+      "replace": "sólido",
+      "family": "adjectives"
+    },
+    {
+      "find": "robusta",
+      "replace": "sólida",
+      "family": "adjectives"
+    },
+    {
+      "find": "transformador",
+      "replace": "importante",
+      "family": "adjectives"
+    },
+    {
+      "find": "transformadora",
+      "replace": "importante",
+      "family": "adjectives"
+    },
+    {
+      "find": "revolucionário",
+      "replace": "novo",
+      "family": "adjectives"
+    },
+    {
+      "find": "revolucionária",
+      "replace": "nova",
+      "family": "adjectives"
+    },
+    {
+      "find": "inovador",
+      "replace": "novo",
+      "family": "adjectives"
+    },
+    {
+      "find": "inovadora",
+      "replace": "nova",
+      "family": "adjectives"
+    },
+    {
+      "find": "ecossistema",
+      "replace": "setor",
+      "family": "nouns"
+    },
+    {
+      "find": "cenário",
+      "replace": "situação",
+      "family": "nouns"
+    },
+    {
+      "find": "panorama",
+      "replace": "situação",
+      "family": "nouns"
+    },
+    {
+      "find": "jornada",
+      "replace": "caminho",
+      "family": "nouns"
+    },
+    {
+      "find": "holístico",
+      "replace": "completo",
+      "family": "adjectives"
+    },
+    {
+      "find": "holística",
+      "replace": "completa",
+      "family": "adjectives"
+    },
+    {
+      "find": "fundamental",
+      "replace": "importante",
+      "family": "adjectives"
+    },
+    {
+      "find": "crucial",
+      "replace": "importante",
+      "family": "adjectives"
+    },
+    {
+      "find": "essencial",
+      "replace": "importante",
+      "family": "adjectives"
+    },
+    {
+      "find": "otimizar",
+      "replace": "melhorar",
+      "family": "verbs"
+    },
+    {
+      "find": "otimize",
+      "replace": "melhore",
+      "family": "verbs"
+    },
+    {
+      "find": "otimizando",
+      "replace": "melhorando",
+      "family": "verbs"
+    },
+    {
+      "find": "engajar",
+      "replace": "envolver",
+      "family": "verbs"
+    },
+    {
+      "find": "engajamento",
+      "replace": "interesse",
+      "family": "nouns"
+    },
+    {
+      "find": "insights",
+      "replace": "ideias",
+      "family": "nouns"
+    },
+    {
+      "find": "insight",
+      "replace": "ideia",
+      "family": "nouns"
+    },
+    {
+      "find": "stakeholders",
+      "replace": "envolvidos",
+      "family": "nouns"
+    },
+    {
+      "find": "stakeholder",
+      "replace": "envolvido",
+      "family": "nouns"
+    },
+    {
+      "find": "agregar valor",
+      "replace": "ajudar",
+      "family": "verbs"
+    },
+    {
+      "find": "seamless",
+      "replace": "simples",
+      "family": "adjectives"
+    },
+    {
+      "find": "de forma significativa",
+      "replace": "muito",
+      "family": "adverbs"
+    },
+    {
+      "find": "de maneira significativa",
+      "replace": "muito",
+      "family": "adverbs"
+    },
+    {
+      "find": "sem dúvida",
+      "replace": "",
+      "family": "adverbs"
+    },
+    {
+      "find": "sem sombra de dúvidas",
+      "replace": "",
+      "family": "adverbs"
+    }
+  ],
+  "phrases": [
+    {
+      "find": "no mundo acelerado de hoje",
+      "replace": "hoje",
+      "family": "openers"
+    },
+    {
+      "find": "no mundo atual",
+      "replace": "hoje",
+      "family": "openers"
+    },
+    {
+      "find": "na era digital",
+      "replace": "hoje",
+      "family": "openers"
+    },
+    {
+      "find": "no cenário atual",
+      "replace": "hoje",
+      "family": "openers"
+    },
+    {
+      "find": "em um mundo em constante evolução",
+      "replace": "hoje",
+      "family": "openers"
+    },
+    {
+      "find": "em um mundo cada vez mais",
+      "replace": "hoje",
+      "family": "openers"
+    },
+    {
+      "find": "nos dias de hoje",
+      "replace": "hoje",
+      "family": "openers"
+    },
+    {
+      "find": "vamos ser sinceros",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "a verdade é que",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "a real é que",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "é importante ressaltar que",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "é importante destacar que",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "vale ressaltar que",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "vale destacar que",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "cabe destacar que",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "é fundamental entender que",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "não é segredo que",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "você sabia que",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "deixe-me explicar",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "segue o que aprendi",
+      "replace": "",
+      "family": "openers"
+    },
+    {
+      "find": "e o melhor de tudo",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "deixo a reflexão",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "reflita sobre isso",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "e você, o que acha?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "o que você acha disso?",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "me conta nos comentários",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "compartilhe com sua rede",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "deixe seu comentário",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "pense nisso",
+      "replace": "",
+      "family": "closers"
+    },
+    {
+      "find": "em resumo",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "em suma",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "em última análise",
+      "replace": "",
+      "family": "fillers"
+    },
+    {
+      "find": "levar ao próximo nível",
+      "replace": "melhorar",
+      "family": "phrases"
+    },
+    {
+      "find": "levar para o próximo nível",
+      "replace": "melhorar",
+      "family": "phrases"
+    },
+    {
+      "find": "elevar o nível",
+      "replace": "melhorar",
+      "family": "phrases"
+    },
+    {
+      "find": "fazer a diferença",
+      "replace": "ajudar",
+      "family": "phrases"
+    }
+  ],
+  "structures": [
+    {
+      "id": "nao-so",
+      "regex": "(?i)\\bnão (?:é|foi|são|era) (?:só|apenas|somente) [^.!?\\n]{2,60}[,.;] (?:é|foi|são|era)\\b",
+      "name": "\"Não é só X, é Y\"",
+      "fix": "Diga a coisa que você quer dizer. Corte a primeira metade."
+    },
+    {
+      "id": "nao-apenas",
+      "regex": "(?i)\\bnão (?:apenas|somente|só)\\b[^.!?\\n]{2,80}\\bmas também\\b",
+      "name": "\"Não apenas X, mas também Y\"",
+      "fix": "Quebre em duas frases ou corte a metade mais fraca."
+    },
+    {
+      "id": "nao-sobre",
+      "regex": "(?i)\\b(?:isso|isto|tudo isso) não (?:é|trata-se) (?:sobre|de) [^.!?\\n]{2,60}[.!] (?:é|trata-se) (?:sobre|de)\\b",
+      "name": "\"Não é sobre X. É sobre Y.\"",
+      "fix": "Comece pelo Y. A virada é o que denuncia."
+    },
+    {
+      "id": "pergunta-seca",
+      "regex": "(?i)^\\s*(?:o resultado|a melhor parte|o detalhe|o problema|a surpresa)\\?\\s*$",
+      "name": "Pergunta retórica de uma linha",
+      "fix": "Responda na própria frase em vez de montar suspense."
+    },
+    {
+      "id": "aprendi",
+      "regex": "(?i)\\bo que (?:eu )?aprendi com isso\\b",
+      "name": "\"O que eu aprendi com isso\"",
+      "fix": "Diga a lição. Pule o anúncio."
+    },
+    {
+      "id": "triade",
+      "regex": "(?i)\\b\\w+, \\w+ e \\w+\\.",
+      "name": "Tríade (\"A, B e C.\")",
+      "fix": "Dois itens ou quatro. Três é o ritmo padrão da IA."
+    },
+    {
+      "id": "emoji-foguete",
+      "regex": "[\\U0001F680\\U0001F525\\U0001F4A1\\u2728\\U0001F3AF]",
+      "name": "Emoji de foguete, fogo, lâmpada, brilho ou alvo",
+      "fix": "No máximo um emoji, e que não seja destes cinco."
+    },
+    {
+      "id": "muro-hashtags",
+      "regex": "(?:#\\w+[ \\t]*){5,}",
+      "name": "Muro de hashtags (5+)",
+      "fix": "Três hashtags. O LinkedIn parou de premiar o muro."
+    },
+    {
+      "id": "vamos-la",
+      "regex": "(?i)^\\s*(?:vamos lá|bora|então vamos)[:!.]?\\s*$",
+      "name": "Abertura de uma linha",
+      "fix": "Comece direto pelo assunto."
+    }
+  ]
+}

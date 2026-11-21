@@ -147,6 +147,10 @@ def pass_lexical(text, lex):
     text = re.sub(r"\s+([,.;:!?])", r"\1", text)
     text = re.sub(r"(?m)^[ \t]+$", "", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
+    # A deleted opener ("Vale ressaltar que ...") leaves a lowercase sentence start.
+    if any(h["replace"] == "(deleted)" for h in hits):
+        text = re.sub(r"(^|[.!?]\s+|\n)([^\W\d_])",
+                      lambda m: m.group(1) + m.group(2).upper(), text)
     # An em dash that became a comma, followed by a sentence connective, leaves
     # a splice ("is important, also, it's proof"). Promote it to a full stop.
     text = re.sub(r",\s*(also|so|still|basically|in the end)\s*,\s*",
